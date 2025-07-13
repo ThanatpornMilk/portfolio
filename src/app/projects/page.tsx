@@ -4,13 +4,7 @@ import Navbar from '@/components/Navbar';
 import ProjectCard from '@/components/ProjectCard';
 
 const projects = [
-  {
-    title: 'Genetic Disease Risk',
-    imageSrc: '/Project1.png',
-    link: 'https://genetic-disease-risk.netlify.app/',
-    tools: ['HTML', 'JavaScript', 'CSS', 'Tailwind CSS'],
-  },
-  {
+    {
     title: 'Event Music Selector',
     imageSrc: '/Project2.png',
     link: 'https://thanatpornmilk.github.io/EventMusicSelector/',
@@ -21,6 +15,12 @@ const projects = [
     imageSrc: '/Project3.png',
     link: 'https://quiz-dyspepsia.netlify.app/',
     tools: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+  },
+  {
+    title: 'Genetic Disease Risk',
+    imageSrc: '/Project1.png',
+    link: 'https://genetic-disease-risk.netlify.app/',
+    tools: ['HTML', 'JavaScript', 'CSS', 'Tailwind CSS'],
   },
   {
     title: 'Reserve Table',
