@@ -1,4 +1,3 @@
-// src/components/SkillCard.tsx
 'use client';
 
 import type { IconType } from 'react-icons';

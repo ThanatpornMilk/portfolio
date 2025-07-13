@@ -72,7 +72,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* blue bar */}
       <div className="fixed top-0 left-0 w-full h-[85px] bg-[#69B0E5] z-20" />
 
       <nav className="fixed top-0 left-0 w-full z-30 flex justify-center items-center h-[85px]">

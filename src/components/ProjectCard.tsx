@@ -6,50 +6,69 @@ import React from 'react';
 
 interface ProjectCardProps {
   title: string;
-  description: string;
   imageSrc?: string;
   link?: string;
+  tools: string[];
 }
 
 export default function ProjectCard({
   title,
-  description,
   imageSrc,
   link,
+  tools,
 }: ProjectCardProps) {
-  const Card = (
-    <div className="relative">
-      {/* colored offset shadow */}
-      <div className="absolute inset-0 translate-x-2 translate-y-2 bg-blue-200 rounded-xl" />
-      {/* main card */}
-      <div className="relative bg-white border-2 border-black rounded-xl overflow-hidden">
-        {/* image area */}
-        <div className="h-40 bg-gray-300 flex items-center justify-center">
+  const CardContent = (
+    <div className="group relative w-full max-w-lg mx-auto">
+      <div
+        className="
+          absolute inset-0 translate-x-2 translate-y-2
+          bg-blue-200 rounded-xl opacity-0
+          transition-opacity duration-200
+          group-hover:opacity-100
+        "
+      />
+      <div className="relative bg-white border-1 border-black rounded-xl overflow-hidden">
+        <div className="w-full h-56 bg-gray-300 flex items-center justify-center overflow-hidden">
           {imageSrc ? (
             <Image
               src={imageSrc}
               alt={title}
-              fill
-              className="object-cover"
+              width={600}
+              height={192}
+              className="object-cover w-full h-full"
             />
           ) : (
             <span className="text-lg text-gray-600">แปะรูป</span>
           )}
         </div>
-        {/* text area */}
-        <div className="p-4">
+
+        <div className="px-4 py-2">
           <h3 className="font-sans font-semibold text-lg">{title}</h3>
-          <p className="text-sm text-gray-600 mt-1">{description}</p>
+        </div>
+
+        <div className="px-4 pb-4 flex flex-wrap gap-2">
+          {tools.map((tool) => (
+            <span
+              key={tool}
+              className="
+                text-xs font-medium
+                bg-blue-200 text-blue-800
+                px-2 py-1 rounded-sm
+              "
+            >
+              {tool}
+            </span>
+          ))}
         </div>
       </div>
     </div>
   );
 
   return link ? (
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      {Card}
+    <a href={link} target="_blank" rel="noopener noreferrer" className="block w-full">
+      {CardContent}
     </a>
   ) : (
-    Card
+    CardContent
   );
 }

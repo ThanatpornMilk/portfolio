@@ -1,4 +1,3 @@
-// src/components/SkillSection.tsx
 'use client';
 
 import SkillCard from './SkillCard';
