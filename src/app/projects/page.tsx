@@ -19,8 +19,8 @@ const projects = [
   {
     title: 'Genetic Disease Risk',
     imageSrc: '/Project1.png',
-    link: 'https://genetic-disease-risk.netlify.app/',
-    tools: ['HTML', 'JavaScript', 'CSS', 'Tailwind CSS'],
+    link: 'https://ThanatpornMilk.github.io/Genetic-Disease-Risk/',
+    tools: ['React', 'Vite', 'JavaScript', 'Tailwind CSS'],
   },
   {
     title: 'Reserve Table',

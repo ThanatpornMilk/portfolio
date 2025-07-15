@@ -12,7 +12,7 @@ export default function Page() {
       <Navbar />
 
       <main>
-        <section id="home" className="relative h-screen bg-[#FBF9F7] overflow-hidden">
+        <section id="home" className="relative min-h-screen bg-[#FBF9F7] overflow-hidden">
           <HomePage />
         </section>
         <section id="projects"   className="min-h-screen"><ProjectsPage/></section>

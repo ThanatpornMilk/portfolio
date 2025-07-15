@@ -20,7 +20,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="relative font-sans h-screen bg-[#FBF9F7] text-black flex flex-col justify-center items-center px-4 md:px-8">
+    <div className="relative font-sans min-h-screen bg-[#FBF9F7] text-black flex flex-col items-center px-4 md:px-8 py-[85px]">
       <h1 className="text-3xl font-semibold mb-8">Get in touch</h1>
 
       <div className="w-full max-w-md md:max-w-lg space-y-4 md:space-y-6">

@@ -6,7 +6,6 @@ import {
   FaGithub,
   FaPhone,
   FaEnvelope,
-  FaFileDownload,
   FaCheckCircle,
 } from 'react-icons/fa';
 
@@ -39,7 +38,7 @@ export default function HomePage() {
 
         {/* grid background */}
         <div
-          className="absolute left-0 right-0 top-[85px] h-[calc(100vh-85px)] z-10 pointer-events-none"
+          className="absolute left-0 right-0 top-0 bottom-0 z-10 pointer-events-none"
           style={{
             backgroundImage: `
               linear-gradient(to right, rgba(105,176,229,0.2) 1px, transparent 1px),
@@ -55,8 +54,8 @@ export default function HomePage() {
             flex flex-col lg:flex-row
             justify-center items-center
             px-6 pb-10 gap-0 lg:gap-12
-            mt-[85px]
-            h-[calc(100vh-85px)]
+            pt-[85px]
+            min-h-screen
           "
         >
           {/* Intro */}
@@ -77,11 +76,12 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-gray-600 text-sm max-w-xl">
-              I’m a Computer Science student interested in Frontend and Full Stack development.
+              I’m a Computer Science student interested in Frontend, Mobile and Web development.
               This website showcases projects I created during my studies.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 text-sm">
+            {/* Phone + Email */}
+            <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-center">
               <div className="flex items-center gap-2">
                 <FaPhone className="text-[#FF912A] w-5 h-5" />
                 <button
@@ -102,16 +102,8 @@ export default function HomePage() {
               </div>
             </div>
 
+            {/* GitHub Button */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-4">
-              <a
-                href="/Thanatporn-Resume.pdf"
-                className="bg-[#FF912A] border border-black text-black font-medium px-5 py-2 rounded-full hover:bg-[#e6811a] transition-transform duration-200 transform hover:scale-105 flex items-center gap-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFileDownload className="w-5 h-5" />
-                Download Resume
-              </a>
               <a
                 href="https://github.com/ThanatpornMilk"
                 className="bg-[#FF912A] border border-black text-black font-medium px-5 py-2 rounded-full hover:bg-[#e6811a] transition-transform duration-200 transform hover:scale-105 flex items-center gap-2"
